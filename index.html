@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Muthuraj J, Senior Software Engineer specializing in .NET, Angular, SQL Server, and Microsoft Azure." />
+  <meta name="keywords" content="Muthuraj J, Senior Software Engineer, .NET, Angular, Azure, SQL Server, Full Stack Developer" />
+  <meta name="author" content="Muthuraj J" />
+  <title>Muthuraj J | Senior Software Engineer</title>
+  <style>
+    :root {
+      --navy: #071426;
+      --navy-2: #0d213d;
+      --blue: #2f8cff;
+      --cyan: #49d7ff;
+      --white: #f7fbff;
+      --muted: #abc0d8;
+      --card: rgba(17, 39, 68, 0.76);
+      --border: rgba(111, 184, 255, 0.2);
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(47, 140, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 88% 22%, rgba(73, 215, 255, 0.12), transparent 26%),
+        var(--navy);
+      color: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(1120px, calc(100% - 40px)); margin: auto; }
+
+    .nav {
+      position: fixed; inset: 0 0 auto; z-index: 50;
+      background: rgba(7, 20, 38, 0.82);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { font-weight: 850; letter-spacing: .02em; font-size: 1.08rem; }
+    .brand span { color: var(--cyan); }
+    .nav-links { display: flex; gap: 22px; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: .92rem; font-weight: 650; transition: .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .menu-btn { display: none; background: none; color: white; border: 0; font-size: 1.6rem; cursor: pointer; }
+
+    .hero { min-height: 100vh; display: grid; place-items: center; padding: 128px 0 72px; position: relative; }
+    .hero-grid { display: grid; grid-template-columns: 1.4fr .8fr; align-items: center; gap: 68px; }
+    .eyebrow { color: var(--cyan); font-weight: 800; letter-spacing: .18em; text-transform: uppercase; font-size: .78rem; margin-bottom: 16px; }
+    h1 { font-size: clamp(3.1rem, 7vw, 6.7rem); line-height: .95; letter-spacing: -.055em; margin-bottom: 26px; }
+    h1 span { display: block; color: transparent; -webkit-text-stroke: 1px rgba(247,251,255,.55); }
+    .lead { max-width: 720px; color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.2rem); }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 20px; border-radius: 12px; font-weight: 800; border: 1px solid var(--border); transition: transform .2s, box-shadow .2s, background .2s; }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #03101f; box-shadow: 0 12px 32px rgba(47, 140, 255, .28); border: 0; }
+    .btn-secondary { background: rgba(255,255,255,.04); }
+
+    .profile-card { position: relative; padding: 22px; border-radius: 31px; border: 1px solid var(--border); background: linear-gradient(165deg, rgba(255,255,255,.11), rgba(255,255,255,.025)); box-shadow: var(--shadow); }
+    .avatar { aspect-ratio: 1; border-radius: 23px; background: linear-gradient(145deg, #1b4c84, #0a1c34); display: grid; place-items: center; overflow: hidden; position: relative; }
+    .avatar::before { content: "MJ"; font-weight: 900; font-size: clamp(5rem, 12vw, 8.5rem); color: rgba(255,255,255,.95); letter-spacing: -.08em; }
+    .avatar::after { content: ""; position: absolute; inset: 48% -20% -30%; background: radial-gradient(circle, rgba(73,215,255,.75), rgba(47,140,255,.12) 51%, transparent 70%); filter: blur(10px); }
+    .availability { display: flex; align-items: center; gap: 9px; margin-top: 17px; color: var(--muted); font-size: .9rem; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #52ef9d; box-shadow: 0 0 0 6px rgba(82,239,157,.12); }
+
+    section { padding: 96px 0; }
+    .section-head { display: flex; justify-content: space-between; gap: 32px; align-items: end; margin-bottom: 42px; }
+    .section-num { color: var(--cyan); font-weight: 850; font-size: .82rem; letter-spacing: .15em; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; letter-spacing: -.04em; margin-top: 8px; }
+    .section-intro { max-width: 560px; color: var(--muted); }
+
+    .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 24px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+    .about-copy p + p { margin-top: 16px; }
+    .about-copy p { color: var(--muted); }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .stat { padding: 20px; border-radius: 16px; background: rgba(255,255,255,.035); border: 1px solid var(--border); }
+    .stat strong { display: block; color: var(--cyan); font-size: 1.7rem; line-height: 1.2; }
+    .stat span { color: var(--muted); font-size: .88rem; }
+
+    .timeline { position: relative; display: grid; gap: 22px; }
+    .timeline::before { content: ""; position: absolute; left: 12px; top: 14px; bottom: 20px; width: 1px; background: linear-gradient(var(--cyan), rgba(73,215,255,.05)); }
+    .timeline-item { position: relative; padding-left: 48px; }
+    .timeline-item::before { content: ""; position: absolute; left: 5px; top: 19px; width: 15px; height: 15px; border-radius: 50%; background: var(--navy); border: 3px solid var(--cyan); box-shadow: 0 0 0 7px rgba(73,215,255,.08); }
+    .job-top { display: flex; justify-content: space-between; gap: 15px; margin-bottom: 13px; }
+    .job-top h3 { font-size: 1.15rem; }
+    .job-top p, .date { color: var(--cyan); font-weight: 750; font-size: .9rem; }
+    .date { white-space: nowrap; }
+    .bullets { padding-left: 18px; color: var(--muted); }
+    .bullets li + li { margin-top: 7px; }
+
+    .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .project { min-height: 294px; display: flex; flex-direction: column; position: relative; overflow: hidden; }
+    .project::after { content: ""; position: absolute; width: 180px; height: 180px; border-radius: 50%; right: -70px; top: -70px; background: radial-gradient(circle, rgba(73,215,255,.16), transparent 70%); }
+    .project-index { color: var(--cyan); font-family: ui-monospace, monospace; font-size: .8rem; }
+    .project h3 { margin: 13px 0 9px; font-size: 1.4rem; }
+    .project p { color: var(--muted); flex: 1; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px; }
+    .tag { padding: 6px 10px; border-radius: 999px; color: #d8ebff; background: rgba(47,140,255,.12); border: 1px solid rgba(47,140,255,.25); font-size: .75rem; font-weight: 700; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .skill-card h3 { margin-bottom: 14px; color: var(--cyan); }
+    .skill-card ul { list-style: none; display: grid; gap: 9px; color: var(--muted); }
+    .skill-card li::before { content: "↗"; color: var(--cyan); margin-right: 9px; }
+
+    .education { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .education h3 { margin-bottom: 8px; }
+    .education p { color: var(--muted); }
+    .education .year { color: var(--cyan); font-weight: 800; margin-top: 14px; }
+
+    .contact-card { text-align: center; padding: clamp(34px, 7vw, 72px); background: linear-gradient(145deg, rgba(47,140,255,.18), rgba(73,215,255,.055)); }
+    .contact-card h2 { max-width: 760px; margin: 0 auto 18px; }
+    .contact-card p { color: var(--muted); max-width: 670px; margin: auto; }
+    .contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+
+    footer { border-top: 1px solid var(--border); color: var(--muted); padding: 28px 0; font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 850px) {
+      .hero-grid, .about-grid { grid-template-columns: 1fr; }
+      .profile-card { max-width: 420px; order: -1; }
+      .projects, .skills-grid { grid-template-columns: 1fr 1fr; }
+      .section-head { display: block; }
+      .section-intro { margin-top: 14px; }
+      .menu-btn { display: block; }
+      .nav-links { display: none; position: absolute; top: 72px; left: 20px; right: 20px; padding: 18px; flex-direction: column; background: #0c203a; border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
+      .nav-links.open { display: flex; }
+    }
+    @media (max-width: 580px) {
+      .container { width: min(100% - 28px, 1120px); }
+      section { padding: 72px 0; }
+      .hero { padding-top: 104px; }
+      .projects, .skills-grid, .education, .stats { grid-template-columns: 1fr; }
+      .job-top, .footer-inner { flex-direction: column; }
+      .date { white-space: normal; }
+      .timeline-item { padding-left: 36px; }
+      .timeline::before { left: 9px; }
+      .timeline-item::before { left: 2px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Muthuraj<span>.</span></a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Senior Software Engineer · Chennai</p>
+          <h1>Muthuraj J<span>Builds enterprise software.</span></h1>
+          <p class="lead">I design, develop, modernize, and support secure enterprise applications using .NET, Angular, SQL Server, and Microsoft Azure.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View selected projects</a>
+            <a class="btn btn-secondary" href="https://muthuraj-engineer.github.io/Portfolio/Muthuraj_J_Resume.pdf" download>Download resume</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="avatar" aria-label="MJ monogram"></div>
+          <div class="availability"><span class="dot"></span>Open to relevant software engineering opportunities</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="section-num">01 / ABOUT</span><h2>Engineering dependable digital solutions.</h2></div>
+          <p class="section-intro">A full-stack engineering profile combining hands-on development, secure cloud integration, technical planning, and production ownership.</p>
+        </div>
+        <div class="about-grid">
+          <article class="card about-copy reveal">
+            <p>I am a Senior Software Engineer with more than eight years of experience in enterprise web application development. My core stack includes ASP.NET Core, .NET Web API, Angular, TypeScript, SQL Server, Dapper, and Azure services.</p>
+            <p>My work spans requirements analysis, architecture, development, database design, authentication, deployment planning, production support, technical documentation, stakeholder coordination, and mentoring. I focus on maintainable code, secure access, clear workflows, and reliable releases.</p>
+            <p>Recent work includes migrating Azure SQL Database and Blob Storage authentication from legacy secrets to Microsoft Entra ID, Managed Identity, and Azure role-based access control.</p>
+          </article>
+          <div class="card stats reveal">
+            <div class="stat"><strong>8+</strong><span>Years in software engineering</span></div>
+            <div class="stat"><strong>Full Stack</strong><span>.NET, Angular, SQL, Azure</span></div>
+            <div class="stat"><strong>Enterprise</strong><span>Applications and APIs</span></div>
+            <div class="stat"><strong>End-to-End</strong><span>Planning through production support</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="section-num">02 / EXPERIENCE</span><h2>Professional journey.</h2></div>
+          <p class="section-intro">Experience delivering and supporting enterprise applications across development, QA, UAT, and production environments.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="card"><div class="job-top"><div><h3>Senior Software Engineer</h3><p>LTIMindtree</p></div><span class="date">Apr 2022 - Present</span></div><ul class="bullets"><li>Lead enterprise application development and support using .NET Core, Angular, SQL Server, Dapper, and Azure services.</li><li>Plan scope, estimates, risks, environment timelines, releases, QA validation, UAT coordination, and production deployments.</li><li>Implement Microsoft Entra ID, Managed Identity, and Azure RBAC for Azure SQL and Blob Storage.</li><li>Optimize stored procedures, APIs, Excel processing, audit flows, secure configuration, logging, and session management.</li><li>Coordinate with business, QA, cloud, network, and support stakeholders and conduct code reviews and knowledge-transfer sessions.</li></ul></div></article>
+          <article class="timeline-item reveal"><div class="card"><div class="job-top"><div><h3>Software Developer</h3><p>Audex Solutions and Technologies Pvt. Ltd.</p></div><span class="date">Dec 2017 - Apr 2022</span></div><ul class="bullets"><li>Developed full-stack applications using ASP.NET, .NET Core, Angular, JavaScript, and SQL Server.</li><li>Built APIs, SSRS reports, Excel import and export features, SFTP integrations, and real-time tracking.</li><li>Supported requirement analysis, database design, IIS deployments, performance tuning, production releases, and issue resolution.</li></ul></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="section-num">03 / PROJECTS</span><h2>Selected project experience.</h2></div>
+          <p class="section-intro">Representative projects that highlight enterprise reporting, cloud security, data processing, integrations, and operational workflows.</p>
+        </div>
+        <div class="projects">
+          <article class="card project reveal"><span class="project-index">PROJECT 01</span><h3>MARS</h3><p>Enterprise metrics and analytics reporting platform. Led enhancements, production support, secure Azure authentication, RBAC migration, deployment coordination, test documentation, and business sign-off activities.</p><div class="tags"><span class="tag">Angular</span><span class="tag">ASP.NET Core</span><span class="tag">SQL Server</span><span class="tag">Azure</span><span class="tag">Entra ID</span></div></article>
+          <article class="card project reveal"><span class="project-index">PROJECT 02</span><h3>Supply Chain Management</h3><p>Implemented configurable Excel uploads, improved processing performance, developed APIs, supported application modernization, and contributed to database and release improvements.</p><div class="tags"><span class="tag">.NET Core</span><span class="tag">Angular</span><span class="tag">Azure App Service</span><span class="tag">SQL Server</span></div></article>
+          <article class="card project reveal"><span class="project-index">PROJECT 03</span><h3>GLM, ResolveIT and MyLTC</h3><p>Delivered dynamic data-maintenance pages, audit solutions, database migrations, complex stored procedures, web jobs, authentication, login audits, sessions, and employee-data workflows.</p><div class="tags"><span class="tag">Web API</span><span class="tag">JWT</span><span class="tag">SQL</span><span class="tag">Azure Data Services</span></div></article>
+          <article class="card project reveal"><span class="project-index">PROJECT 04</span><h3>Raymond WMS</h3><p>Developed warehouse-management modules, reports, APIs, SFTP integrations, Excel processing, and real-time tracking capabilities for enterprise logistics workflows.</p><div class="tags"><span class="tag">ASP.NET</span><span class="tag">Angular</span><span class="tag">SSRS</span><span class="tag">SFTP</span><span class="tag">SignalR</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="section-num">04 / SKILLS</span><h2>Technology toolkit.</h2></div><p class="section-intro">A practical stack built around full-stack development, Microsoft Azure, enterprise data, secure integration, and delivery operations.</p></div>
+        <div class="skills-grid">
+          <article class="card skill-card reveal"><h3>Backend</h3><ul><li>C# and .NET Core</li><li>ASP.NET Core Web API</li><li>ASP.NET MVC</li><li>Dapper and Entity Framework</li><li>REST APIs and Dependency Injection</li></ul></article>
+          <article class="card skill-card reveal"><h3>Frontend</h3><ul><li>Angular</li><li>TypeScript and JavaScript</li><li>HTML5 and CSS3</li><li>Bootstrap</li><li>Kendo Grid</li></ul></article>
+          <article class="card skill-card reveal"><h3>Data</h3><ul><li>SQL Server and Azure SQL</li><li>Stored procedures</li><li>Query optimization</li><li>Data migration</li><li>SSRS and audit design</li></ul></article>
+          <article class="card skill-card reveal"><h3>Azure</h3><ul><li>Azure App Service</li><li>Azure Blob Storage</li><li>Microsoft Entra ID</li><li>Managed Identity and RBAC</li><li>Azure DevOps and CI/CD</li></ul></article>
+          <article class="card skill-card reveal"><h3>Integration</h3><ul><li>MuleSoft</li><li>ServiceNow</li><li>SFTP</li><li>JWT authentication</li><li>Enterprise APIs</li></ul></article>
+          <article class="card skill-card reveal"><h3>Engineering</h3><ul><li>Agile and Scrum</li><li>System and release planning</li><li>Code review</li><li>Production support</li><li>Technical documentation</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="section-num">05 / EDUCATION</span><h2>Academic background.</h2></div></div>
+        <div class="education">
+          <article class="card reveal"><h3>Master of Computer Applications</h3><p>Sri Manakula Vinayagar Engineering College, Pondicherry</p><div class="year">2017</div></article>
+          <article class="card reveal"><h3>Bachelor of Computer Applications</h3><p>St. Joseph's College of Arts and Science, Cuddalore</p><div class="year">2014</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="card contact-card reveal"><span class="section-num">06 / CONTACT</span><h2>Let’s build secure, reliable software.</h2><p>For software engineering opportunities, enterprise application development, cloud modernization, or technical collaboration, connect using the options below.</p><div class="contact-links"><a class="btn btn-primary" href="mailto:muthuraj.office@gmail.com">Email Muthuraj</a><a class="btn btn-secondary" href="tel:+919994035966">Call</a><a class="btn btn-secondary" href="Muthuraj_J_Resume.pdf" download>Download resume</a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Muthuraj J</span><span>Designed as a responsive, accessible portfolio.</span></div></footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false');
+    }));
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const links = [...document.querySelectorAll('.nav-links a')];
+    window.addEventListener('scroll', () => {
+      const current = sections.filter(s => s.offsetTop <= window.scrollY + 140).pop();
+      links.forEach(a => a.classList.toggle('active', current && a.getAttribute('href') === '#' + current.id));
+    }, { passive: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
