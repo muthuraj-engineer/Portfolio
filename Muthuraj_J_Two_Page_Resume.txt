@@ -7,6 +7,12 @@ SUMMARY
 
 Senior Software Engineer with 8+ years of experience developing robust enterprise web applications and APIs. Strong expertise in C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Dapper, and Microsoft Azure. Experienced in system modernization, secure authentication, Azure role-based access control, performance optimization, deployment planning, production support, and Agile delivery.
 
+Senior Software Engineer with 8+ years of experience delivering enterprise web applications and APIs across the software
+development lifecycle. Strong expertise in C#, .NET Core, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Dapper,
+Microsoft Azure, and Azure DevOps. Experienced in application modernization, secure authentication, role-based access
+control, database optimization, release planning, production support, and stakeholder coordination.
+
+
 TECHNICAL SKILLS
 
 Backend:
@@ -40,12 +46,43 @@ Apr 2022 - Present
 - Coordinate with business, QA, cloud, network, and support teams to resolve authorization, firewall, upload, and deployment issues.
 - Perform code reviews, mentor developers, prepare technical documentation, conduct knowledge transfer, and support sign-offs.
 
+
+
+
+• Lead development, enhancement, deployment, and production support for enterprise applications using .NET Core, Angular,
+SQL Server, Dapper, and Azure services.
+• Define scope, module-level estimates, environment timelines, risks, release plans, QA validation, UAT coordination, and
+production-deployment activities.
+• Migrate Azure SQL Database and Blob Storage authentication from legacy keys and connection strings to Microsoft Entra ID,
+Managed Identity, and Azure RBAC.
+• Design and optimize stored procedures, APIs, database objects, audit processes, and bulk Excel upload workflows for
+reliability and performance.
+• Implement secure configuration, token-based authentication, role-based authorization, session controls, logging, and
+secret-management improvements.
+• Coordinate with business, QA, cloud, network, and support teams to resolve authorization, firewall, upload, deployment, and
+environment issues.
+• Perform code reviews, mentor developers, prepare technical and test documentation, conduct knowledge-transfer sessions,
+and support sign-off activities.
+
+
+
 Audex Solutions and Technologies Pvt. Ltd. | Software Developer
 Dec 2017 - Apr 2022
 
 - Developed full-stack applications using ASP.NET, Angular, JavaScript, and SQL Server.
 - Built REST APIs, SSRS reports, Excel import/export features, SFTP integrations, and real-time tracking.
 - Supported requirement analysis, database design, IIS deployments, performance tuning, releases, and production support.
+
+
+
+• Developed full-stack web applications for warehouse management and enterprise workflows using ASP.NET, .NET Core,
+Angular, JavaScript, and SQL Server.
+• Built REST APIs, reporting modules, Excel import/export features, SSRS reports, SFTP integrations, and real-time tracking
+capabilities.
+• Participated in requirement analysis, application and database design, stored-procedure development, IIS deployment, defect
+resolution, and production support.
+• Improved query and stored-procedure performance and supported releases from development through production with
+minimal disruption.
 
 PROJECT EXPERIENCE
 
@@ -56,32 +93,69 @@ May 2025 - Present
 - Implement Microsoft Entra ID and Azure RBAC for Azure SQL Database and Blob Storage.
 - Troubleshoot authorization, network, firewall, local-development, and environment-specific access issues.
 
+
+Enterprise platform supporting metrics, analytics, file processing, dashboards, and reporting workflows.
+Key contributions: Lead enhancements and production support; coordinate deployments and sign-offs; implement Entra ID and
+Azure RBAC for SQL Database and Blob Storage; troubleshoot authorization and network-access issues; prepare scope, KT, test, and
+release documentation.
+Technologies: Angular, ASP.NET Core, .NET 6, Dapper, SQL Server, Azure App Service, Blob Storage, Entra ID, Azure RBAC, JWT
+
 SCM - Supply Chain Management
 Feb 2024 - May 2025
 
 - Implemented configurable Excel uploads and improved file-processing performance.
 - Developed APIs, supported application modernization, optimized database operations, and coordinated releases.
 
+
+Enterprise supply-chain platform supporting procurement, conversion, logistics, and information flow.
+Key contributions: Implemented configurable Excel upload, improved processing performance, developed APIs, supported
+application modernization, database changes, code optimization, and production releases.
+Technologies: .NET Core, Angular, SQL Server, Azure App Service, REST APIs
+
 ResolveIT
 Oct 2023 - Feb 2024
 
 - Implemented Microsoft token acquisition, directory verification, login-audit tracking, and session validation.
+
+
+
+Workflow solution supporting incident, change, asset, self-service, and service-management processes.
+Key contributions: Implemented Microsoft token acquisition, Active Directory verification, IP and login-audit tracking, session
+validation, and secure persistence of authentication details.
+Technologies: .NET Core 6, ASP.NET Core Web API, SQL Server, Angular, JWT, Microsoft identity services
 
 GLM - Global Master
 Nov 2022 - Sep 2023
 
 - Created dynamic maintenance pages, migration processes, reporting stored procedures, web jobs, and audit handling.
 
+Enterprise data-maintenance solution supporting operational, employee, logistics, and audit workflows.
+Key contributions: Created dynamic maintenance pages, cross-database migration processes, Azure data flows and pipelines,
+complex reporting stored procedures, web jobs, and transaction-level audit handling.
+Technologies: .NET Core, Angular, SQL Server, Azure Data Services, Web Jobs
+
 MyLTC
 Apr 2022 - Sep 2022
 
 - Developed modules, migrated legacy functionality, integrated APIs, and supported business users.
+
+
+Internal employee application supporting attendance, leave, transfers, and ServiceNow-related workflows.
+Key contributions: Developed modules, migrated .NET Framework functionality to .NET 6, integrated APIs, supported users, and
+improved application flows.
+Technologies: .NET 6, ASP.NET Core Web API, Angular, SQL Server, ServiceNow
 
 Raymond Warehouse Management System
 Dec 2017 - Mar 2022
 
 - Developed modules and SSRS reports.
 - Implemented SignalR tracking, SFTP exchange, and Excel workflows.
+
+
+Warehouse-management platform covering sourcing, procurement, tracking, reporting, and product delivery.
+Key contributions: Developed application modules and SSRS reports; implemented SignalR-based tracking and mapping integration;
+exchanged data through SFTP; supported Excel and database workflows.
+Technologies: ASP.NET, .NET Core, Angular, SQL Server, SSRS, SignalR, SFTP
 
 EDUCATION
 
