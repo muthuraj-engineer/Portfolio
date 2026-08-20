@@ -1,0 +1,94 @@
+﻿MUTHURAJ J
+Senior Software Engineer | Full Stack Developer
+Chennai, Tamil Nadu | +91 99940 35966 | muthuraj.office@gmail.com
+Portfolio: https://muthuraj-engineer.github.io/Portfolio
+
+SUMMARY
+
+Senior Software Engineer with 8+ years of experience developing robust enterprise web applications and APIs. Strong expertise in C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Dapper, and Microsoft Azure. Experienced in system modernization, secure authentication, Azure role-based access control, performance optimization, deployment planning, production support, and Agile delivery.
+
+TECHNICAL SKILLS
+
+Backend:
+C#, ASP.NET Core Web API, ASP.NET MVC, Dapper, Entity Framework, LINQ, REST APIs
+
+Frontend:
+Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap, Kendo Grid
+
+Database:
+SQL Server, Azure SQL, stored procedures, query optimization, data migration, SSRS, audit design
+
+Azure & DevOps:
+Azure App Service, Blob Storage, Microsoft Entra ID, Managed Identity, Azure RBAC, Azure DevOps, CI/CD, Git
+
+Integrations & Tools:
+MuleSoft, ServiceNow, SFTP, JWT, SonarQube, AppDynamics, IIS
+
+Methods:
+Agile, Scrum, requirement analysis, system design, code review, release planning, UAT coordination, technical documentation
+
+WORK EXPERIENCE
+
+LTIMindtree | Senior Software Engineer
+Apr 2022 - Present
+
+- Lead development, enhancement, deployment, and production support for enterprise applications using ASP.NET Core, Angular, SQL Server, Dapper, and Azure services.
+- Define scope, estimates, environment timelines, risks, release plans, QA validation, UAT coordination, and production deployments.
+- Migrate Azure SQL Database and Blob Storage authentication from access keys to Microsoft Entra ID, Managed Identity, and Azure RBAC.
+- Design and optimize APIs, stored procedures, database objects, audit processes, and bulk Excel upload workflows.
+- Implement secure configuration, token authentication, role-based authorization, session controls, logging, and secret-management improvements.
+- Coordinate with business, QA, cloud, network, and support teams to resolve authorization, firewall, upload, and deployment issues.
+- Perform code reviews, mentor developers, prepare technical documentation, conduct knowledge transfer, and support sign-offs.
+
+Audex Solutions and Technologies Pvt. Ltd. | Software Developer
+Dec 2017 - Apr 2022
+
+- Developed full-stack applications using ASP.NET, Angular, JavaScript, and SQL Server.
+- Built REST APIs, SSRS reports, Excel import/export features, SFTP integrations, and real-time tracking.
+- Supported requirement analysis, database design, IIS deployments, performance tuning, releases, and production support.
+
+PROJECT EXPERIENCE
+
+MARS - Metrics & Analytics Reporting System
+May 2025 - Present
+
+- Lead enhancements, deployment coordination, production support, test documentation, and business sign-offs.
+- Implement Microsoft Entra ID and Azure RBAC for Azure SQL Database and Blob Storage.
+- Troubleshoot authorization, network, firewall, local-development, and environment-specific access issues.
+
+SCM - Supply Chain Management
+Feb 2024 - May 2025
+
+- Implemented configurable Excel uploads and improved file-processing performance.
+- Developed APIs, supported application modernization, optimized database operations, and coordinated releases.
+
+ResolveIT
+Oct 2023 - Feb 2024
+
+- Implemented Microsoft token acquisition, directory verification, login-audit tracking, and session validation.
+
+GLM - Global Master
+Nov 2022 - Sep 2023
+
+- Created dynamic maintenance pages, migration processes, reporting stored procedures, web jobs, and audit handling.
+
+MyLTC
+Apr 2022 - Sep 2022
+
+- Developed modules, migrated legacy functionality, integrated APIs, and supported business users.
+
+Raymond Warehouse Management System
+Dec 2017 - Mar 2022
+
+- Developed modules and SSRS reports.
+- Implemented SignalR tracking, SFTP exchange, and Excel workflows.
+
+EDUCATION
+
+Master of Computer Applications (MCA)
+Sri Manakula Vinayagar Engineering College, Pondicherry
+2017
+
+Bachelor of Computer Applications (BCA)
+St. Joseph's College of Arts and Science, Cuddalore
+2014
