@@ -7,16 +7,17 @@ SUMMARY
 
 Senior Software Engineer with 8+ years of experience developing robust enterprise web applications and APIs. Strong expertise in C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Dapper, and Microsoft Azure. Experienced in system modernization, secure authentication, Azure role-based access control, performance optimization, deployment planning, production support, and Agile delivery.
 
-Senior Software Engineer with 8+ years of experience delivering enterprise web applications and APIs across the software
-development lifecycle. Strong expertise in C#, .NET Core, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Dapper,
-Microsoft Azure, and Azure DevOps. Experienced in application modernization, secure authentication, role-based access
-control, database optimization, release planning, production support, and stakeholder coordination.
+Senior Software Engineer with 8+ years of experience in designing, developing, and supporting enterprise web applications, cloud solutions, and AI-powered business applications. 
+
+Expertise in C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Microsoft Azure, and Azure DevOps. Proven experience in application modernization, Microsoft Entra ID, Azure RBAC, secure authentication, and production support. 
+
+Hands-on experience with Azure OpenAI, Retrieval-Augmented Generation (RAG), Prompt Engineering, Copilot Integration, and Agentic AI to build intelligent, scalable, and business-driven solutions. Strong track record of delivering high-quality applications, optimizing performance, and collaborating with cross-functional stakeholders.
 
 
 TECHNICAL SKILLS
 
 Backend:
-C#, ASP.NET Core Web API, ASP.NET MVC, Dapper, Entity Framework, LINQ, REST APIs
+C#, ASP.NET Core, Web API, ASP.NET MVC, Dapper, Entity Framework, LINQ, REST APIs
 
 Frontend:
 Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap, Kendo Grid
@@ -25,13 +26,14 @@ Database:
 SQL Server, Azure SQL, stored procedures, query optimization, data migration, SSRS, audit design
 
 Azure & DevOps:
-Azure App Service, Blob Storage, Microsoft Entra ID, Managed Identity, Azure RBAC, Azure DevOps, CI/CD, Git
+Azure App Service, Blob Storage, Microsoft Entra ID, Managed Identity, Azure Key vault, Azure RBAC, Azure DevOps, CI/CD, Github, Gitchanges.
 
 Integrations & Tools:
-MuleSoft, ServiceNow, SFTP, JWT, SonarQube, AppDynamics, IIS
+Azure OpenAI, Retrieval-Augmented Generation (RAG), Agentic AI, LLM Integration, Copilot Integration, MuleSoft, ServiceNow, SFTP, JWT, SonarQube, AppDynamics, AI-Powered Enterprise Applications, Automation Testing in Playwrite.
 
 Methods:
 Agile, Scrum, requirement analysis, system design, code review, release planning, UAT coordination, technical documentation
+
 
 WORK EXPERIENCE
 
@@ -63,6 +65,12 @@ secret-management improvements.
 environment issues.
 • Perform code reviews, mentor developers, prepare technical and test documentation, conduct knowledge-transfer sessions,
 and support sign-off activities.
+
+• Implemented Azure OpenAI integration for enterprise AI capabilities.
+• Designed and developed RAG-based document and knowledge retrieval solutions.
+• Developed prompt-engineering approaches for intelligent business workflows.
+• Evaluated and implemented Agentic AI concepts to automate repetitive business processes.
+• Built AI-assisted features using Azure OpenAI and enterprise data sources.
 
 
 
