@@ -20,7 +20,7 @@ Backend:
 C#, ASP.NET Core, Web API, ASP.NET MVC, Dapper, Entity Framework, LINQ, REST APIs
 
 Frontend:
-Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap, Kendo Grid
+Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap
 
 Database:
 SQL Server, Azure SQL, stored procedures, query optimization, data migration, SSRS, audit design
